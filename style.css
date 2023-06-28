@@ -1,42 +1,30 @@
 :root{
-    --cor-de-fundo:#c0d0f3a6;
-    --branco:#FFFFFF;
+    --cor-de-fundo:#f0f2f8;
 }
-
 body{
-    background-color: var(--cor-de-fundo);
-    
+    background-color:var(--cor-de-fundo);
 }
-
-.cabecalho_menu-hamburguer {
+.cabeçalho_menu-hamburguer{
     width: 24px;
     height: 24px;
-    background-image: url(./img/menu.swg);
-    background-repeat: no-repeat;
+    background-image: url(./img/menu.svg);
+    background-repeat:no-repeat ;
     background-position: center;
     display: inline-block;
-
 }
-
-
-.cabecalho {
-    background-color: var(--branco);
+.cabeçalho{
+    background-color: rgb(248, 236, 221);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: relative;
 }
-
-.container {
-            display: flex;
-            align-items: center;
-           }
-
-.container_imagem {
-             padding: lem;
-             margin: lem;
-             width: Sem;
-
-                 }
-
-                 
+.container{
+    display: flex;
+    align-items: center;
+}
+.container_imagem{
+    padding:1em ;
+    margin: 1em;
+    width: 5em;
+}
