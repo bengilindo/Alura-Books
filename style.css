@@ -1,30 +1,170 @@
 :root{
-    --cor-de-fundo:#f0f2f8;
+    --cor-de-fundo:#ccd6f1a6;
+    --branco:#ffffff;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #fff7f7 35.49%, #fdfdfd 165.37%);
+    ---fonte-principal:"poppins";
 }
+
 body{
-    background-color:var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);
+    font-family: var(---fonte-principal);
 }
-.cabeçalho_menu-hamburguer{
-    width: 24px;
-    height: 24px;
-    background-image: url(./img/menu.svg);
-    background-repeat:no-repeat ;
+
+.cabecalho-menu-hamburguer{
+    width: 44px;
+    height: 44px;
+    background-image: url(./img/Menu.svg);
+    background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
-.cabeçalho{
-    background-color: rgb(248, 236, 221);
+
+.cabecalho{
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: -0.5em;
 }
+
 .container{
     display: flex;
     align-items: center;
 }
+
 .container_imagem{
-    padding:1em ;
-    margin: 1em;
-    width: 5em;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+}
+
+.container-botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    width: 20ww;
+}
+
+.lista-menu-titulo,
+.lista-menu-item {
+    padding: 1em;
+    background-color:#002F52;
+}
+
+
+.lista-menu-titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+
+.lista-menu-link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.lista-menu-item{
+    background-color: #002F52;
+}
+         
+.container-botao {
+    display: none;
+}
+
+.lista-menu{
+    display: none;
+}
+
+.banner{
+    background-color: #002F52;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.banner-titulo{
+    font-size: 60px;
+    font-weight: 700;
+    padding: 50px;
+}
+
+.banner-texto{
+    font-weight: 400;
+}
+
+.pesquisa{
+    background-color: rgb(255, 81, 81);
+    border: rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    background: url("./img/lupa.svg") no-repeat;
+    background-position: 1em;
+    font-size: 20px;
+}
+
+
+ .carrossel-titulo{
+color: var(--laranja);
+background-color: var(--branco);
+text-align: center;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 700;
+padding: 1em 0 0.5em 0;
+    }
+
+    .swiper-slide img{
+        width: 80%;
+        padding: 10px 55px;
+    }
+
+.card-descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0,5em;
+}
+
+.card-botoes{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.botoes{ 
+    display: flex;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: center;
+    margin: 3em;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.titulo-mais-vendidos{
+    text-align: center;
+    font-size: larger;   
+}
+
+.mais-vendidos-livros{
+height: 400px;
+}
+
+.botoes-itens{
+    margin: 5px 10px;
+    height: 60px 20px;
 }
